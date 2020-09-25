@@ -1,12 +1,14 @@
 import React from 'react';
 
-import { Container } from './styles';
+import Menu from '../components/Menu';
+
+import { Container, Content } from './styles';
 
 const Layout = ({ children }) => {
   return (
     <Container>
-      <h1>Hello World</h1>
-      {children}
+      <Menu />
+      <Content>{children}</Content>
     </Container>
   );
 };

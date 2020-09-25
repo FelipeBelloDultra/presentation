@@ -1,6 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+  #root {
+    height: 100vh;
+    width: 100vw;
+  }
+
   *, *:after, *:before {
     margin: 0;
     padding: 0;
@@ -10,7 +15,6 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background: #2B2d42;
-    /* background: #282C34; */
     color: #fff;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
