@@ -1,11 +1,18 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import logoReact from './assets/logo.svg';
+import Routes from './routes';
 
-import './App.css';
+import GlobalStyles from './styles/GlobalStyles';
 
-function App() {
-  return <img className="App-logo" src={logoReact} alt="Logo React" />;
-}
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes />
+
+      <GlobalStyles />
+    </BrowserRouter>
+  );
+};
 
 export default App;
