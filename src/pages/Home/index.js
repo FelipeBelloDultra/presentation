@@ -2,12 +2,15 @@ import React from 'react';
 
 import logoReact from '../../assets/logo.svg';
 
-import { Container } from './styles';
+import { Container, ImgContainer } from './styles';
 
 const Home = () => {
   return (
     <Container>
-      <img src={logoReact} alt="Logo React" />
+      <ImgContainer>
+        <img src={logoReact} alt="Logo React" />
+        <h1>ReactJS</h1>
+      </ImgContainer>
     </Container>
   );
 };
