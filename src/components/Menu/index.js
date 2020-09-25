@@ -19,22 +19,25 @@ const Menu = () => {
     },
   ]);
 
-  const handleToggleActiveItem = useCallback((ref) => {
-    const resetItem = items.map((item) => ({
-      ...item,
-      active: false,
-    }));
+  const handleToggleActiveItem = useCallback(
+    (ref) => {
+      const resetItem = items.map((item) => ({
+        ...item,
+        active: false,
+      }));
 
-    const activeItem = resetItem.map((item) => {
-      if (item.ref === ref) {
-        item.active = true;
-      }
+      const activeItem = resetItem.map((item) => {
+        if (item.ref === ref) {
+          item.active = true;
+        }
 
-      return item;
-    });
+        return item;
+      });
 
-    setItems(activeItem);
-  }, []);
+      setItems(activeItem);
+    },
+    [items]
+  );
 
   return (
     <Container>
