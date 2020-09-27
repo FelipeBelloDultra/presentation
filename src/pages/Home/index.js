@@ -5,6 +5,7 @@ import logoReact from '../../assets/logo.svg';
 import { Container, ImgContainer } from './styles';
 
 const Home = () => {
+  console.log('Felipe');
   return (
     <Container>
       <ImgContainer>

@@ -1,9 +1,12 @@
-import React, { useState, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 import { Container, LinksList } from './styles';
 
 const Menu = () => {
+  const location = useLocation();
+  const { pathname } = location;
+
   const [items, setItems] = useState([
     {
       to: '/home',
@@ -19,36 +22,26 @@ const Menu = () => {
     },
   ]);
 
-  const handleToggleActiveItem = useCallback(
-    (ref) => {
-      const resetItem = items.map((item) => ({
-        ...item,
-        active: false,
-      }));
-
-      const activeItem = resetItem.map((item) => {
-        if (item.ref === ref) {
+  useEffect(() => {
+    setItems((prev) =>
+      prev.map((item) => {
+        if (item.to === pathname) {
           item.active = true;
+        } else {
+          item.active = false;
         }
 
         return item;
-      });
-
-      setItems(activeItem);
-    },
-    [items]
-  );
+      })
+    );
+  }, [pathname]);
 
   return (
     <Container>
       <LinksList>
         {items.map((item) => (
           <li key={item.ref}>
-            <Link
-              to={item.to}
-              onClick={() => handleToggleActiveItem(item.ref)}
-              className={item.active ? 'active' : ''}
-            >
+            <Link to={item.to} className={item.active ? 'active' : ''}>
               {item.title}
             </Link>
           </li>
