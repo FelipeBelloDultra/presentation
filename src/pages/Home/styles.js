@@ -57,13 +57,20 @@ export const ContainerText = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  h2 {
+  button {
     width: 150px;
-  }
+    height: 40px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #c0e6f1;
+    color: #fff;
+    transition: all 0.2s;
+    font-weight: bold;
 
-  p {
-    flex: 1;
-    color: #c0e6f1;
+    &:hover {
+      border-color: #5dceed;
+      color: #c0e6f1;
+    }
   }
 `;
 

@@ -18,12 +18,12 @@ const Home = () => {
       </ImgContainer>
 
       <ContainerText>
-        <h2>O que é?</h2>
+        <button type="button">O que é?</button>
 
-        <p>
+        {/* <p>
           React é uma biblioteca JavaScript de código aberto usado para criar
           interfaces de usuário em páginas web.
-        </p>
+        </p> */}
       </ContainerText>
 
       <CardDescription>
