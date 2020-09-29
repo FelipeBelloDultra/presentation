@@ -20,6 +20,12 @@ const Menu = () => {
       title: '# Por que React?',
       active: false,
     },
+    {
+      to: '/difference',
+      ref: 'difference',
+      title: '# React x ReactJS x React Native',
+      active: false,
+    },
   ]);
 
   useEffect(() => {
