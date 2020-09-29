@@ -10,18 +10,24 @@ const logoSpin = keyframes`
 `;
 
 const appearFromTop = keyframes`
-  from {
+  0% {
     opacity: 0;
-    transform: translate(0px, -150px);
+    transform: translate(0px, -180px);
   }
-  to {
+  33% {
     opacity: 1;
+    transform: translate(0px);
+  }
+  70% {
+    transform: translate(0px, -20px);
+  }
+  100% {
     transform: translate(0px);
   }
 `;
 
 export const Container = styled.div`
-  animation: ${appearFromTop} 1s;
+  animation: ${appearFromTop} 0.7s;
 `;
 
 export const ImgContainer = styled.div`
@@ -41,7 +47,6 @@ export const ImgContainer = styled.div`
     margin-top: -45px;
     text-align: center;
     color: #fff;
-    /* font-size: 24px; */
   }
 `;
 

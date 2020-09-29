@@ -7,8 +7,8 @@ import { Container, Content } from './styles';
 const Layout = ({ children }) => {
   return (
     <Container>
-      <Menu />
       <Content>{children}</Content>
+      <Menu />
     </Container>
   );
 };
