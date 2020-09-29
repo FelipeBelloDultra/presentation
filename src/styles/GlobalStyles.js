@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: #2B2d42;
+    background: #282c34;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #282c34;
+  background: #20232a;
   overflow-y: scroll;
   width: 20%;
 
@@ -28,7 +28,6 @@ export const LinksList = styled.ul`
     a {
       color: #aaa;
       text-decoration: none;
-      font-weight: 500;
       font-size: 18px;
       transition: all 0.1s;
       display: flex;
