@@ -27,15 +27,17 @@ export const Container = styled.div`
 export const ModalContent = styled.aside`
   background: #eee;
   border-radius: 5px;
-  width: 500px;
-  height: 300px;
+  max-width: 500px;
   color: #000;
   transition: all 0.2s;
   transform: translateY(-100px);
-  z-index: 4;
+  position: relative;
+  padding: 40px 10px 10px;
 
   .button {
-    margin: 10px 0 0 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
     height: 20px;
     width: 20px;
     border-radius: 50%;

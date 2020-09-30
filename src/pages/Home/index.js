@@ -29,13 +29,11 @@ const Home = () => {
         </button>
 
         <Modal>
-          <h1>Hello Wolrd</h1>
+          <p>
+            React é uma biblioteca JavaScript de código aberto usado para criar
+            interfaces de usuário em páginas web.
+          </p>
         </Modal>
-
-        {/* <p>
-          React é uma biblioteca JavaScript de código aberto usado para criar
-          interfaces de usuário em páginas web.
-        </p> */}
       </ContainerText>
 
       <CardDescription>
