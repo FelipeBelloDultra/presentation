@@ -24,16 +24,27 @@ export const ModalContent = styled.div`
   border-radius: 5px;
   width: 500px;
   height: 300px;
-  position: relative;
 
   button {
-    position: absolute;
+    position: relative;
+    margin: 10px 0 0 10px;
     height: 20px;
     width: 20px;
-    top: 10px;
-    left: 10px;
     border-radius: 50%;
     border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #ff5f5a;
+
+    &:hover {
+      &:before {
+        content: '+';
+        transform: rotate(45deg);
+        position: absolute;
+        top: 1px;
+        right: 5px;
+      }
+    }
   }
 `;
