@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Modal from '../../components/Modal';
+
 import { useModal } from '../../hooks/modal';
 
 import logoReact from '../../assets/logo.svg';
@@ -25,6 +27,10 @@ const Home = () => {
         <button type="button" onClick={handleOpenModal}>
           O que é?
         </button>
+
+        <Modal>
+          <h1>Hello Wolrd</h1>
+        </Modal>
 
         {/* <p>
           React é uma biblioteca JavaScript de código aberto usado para criar
